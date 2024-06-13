@@ -26,7 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body * {
@@ -155,20 +155,14 @@ ul li a:hover {
   background: var(--highlight-color);
 }
 
-footer {
-  padding: 24px 0px;
-  text-align: center;
-  font-size: 14px;
-}
-
 /* media queries */
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./Assets/Background-white.png);
   }
-  .dark {
+  .blue {
     --bg-url: url(./Assets/Background-blue.png);
-  }
+  } 
 }
 
 /* animation */
