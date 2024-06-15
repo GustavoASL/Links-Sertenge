@@ -48,7 +48,7 @@ body * {
 }
 
 #profile img {
-  width: 112px;
+  width: 160px;
 }
 
 #profile p {
@@ -162,7 +162,7 @@ ul li a:hover {
   }
   .blue {
     --bg-url: url(./Assets/Background-blue.png);
-  } 
+  }
 }
 
 /* animation */
