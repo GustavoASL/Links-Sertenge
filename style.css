@@ -5,16 +5,6 @@
 }
 
 :root {
-  --text-color: #0f3645;
-  --bg-url: url(./Assets/Background-white\ mobile.png);
-  --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color: rgba(0, 0, 0, 0.05);
-  --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(./Assets/sun.svg);
-}
-
-.blue {
   --text-color: white;
   --bg-url: url(./Assets/Background-blue\ mobile.png);
   --stroke-color: rgba(255, 255, 255, 0.5);
@@ -22,6 +12,16 @@
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./Assets/moon-stars.svg);
+}
+
+.white {
+  --text-color: #0f3645;
+  --bg-url: url(./Assets/Background-white\ mobile.png);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./Assets/sun.svg);
 }
 
 body {
@@ -80,7 +80,7 @@ body * {
   animation: slide-in 0.4s;
 }
 
-.blue #switch button {
+.white #switch button {
   animation: slide-back 0.2s forwards;
 }
 
@@ -158,10 +158,10 @@ ul li a:hover {
 /* media queries */
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./Assets/Background-white.png);
-  }
-  .blue {
     --bg-url: url(./Assets/Background-blue.png);
+  }
+  .white {
+    --bg-url: url(./Assets/Background-white.png); 
   }
 }
 

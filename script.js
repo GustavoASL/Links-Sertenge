@@ -1,28 +1,22 @@
 function toggleMode() {
   const html = document.documentElement
-  html.classList.toggle("blue")
+  html.classList.toggle("white")
 
   // pegar a tag img
   const img = document.querySelector("#profile img")
 
   // substituir a imagem
-  if (html.classList.contains("blue")) {
+  if (html.classList.contains("white")) {
     // se tiver light mode, adicionar a imagem light
-    img.setAttribute("src", "./Assets/Avatar-blue.jpeg")
+    img.setAttribute("src", "./Assets/Avatar-white.jpeg") 
   } else {
     // se tiver sem light mode, manter a imagem normal
-    img.setAttribute("src", "./Assets/Avatar-white.jpeg")
+    img.setAttribute("src", "./Assets/Avatar-blue.jpeg")
   }
 
-  if (html.classList.contains("blue")) {
-    img.setAttribute(
-      "alt",
-      "Logo da Sertenge Azul"
-    )
+  if (html.classList.contains("white")) {
+    img.setAttribute("alt", "Logo da Sertenge Branca")
   } else {
-    img.setAttribute(
-      "alt",
-      "Logo da Sertenge Branca"
-    )
+    img.setAttribute("alt","Logo da Sertenge Azul")
   }
 }
