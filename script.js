@@ -7,16 +7,12 @@ function toggleMode() {
 
   // substituir a imagem
   if (html.classList.contains("white")) {
-    // se tiver light mode, adicionar a imagem light
-    img.setAttribute("src", "./Assets/Avatar-white.jpeg") 
-  } else {
-    // se tiver sem light mode, manter a imagem normal
-    img.setAttribute("src", "./Assets/Avatar-blue.jpeg")
-  }
-
-  if (html.classList.contains("white")) {
+    // se tiver white mode, adicionar a imagem light
+    img.setAttribute("src", "./Assets/Avatar-white.jpeg")
     img.setAttribute("alt", "Logo da Sertenge Branca")
   } else {
-    img.setAttribute("alt","Logo da Sertenge Azul")
+    // se tiver sem white mode, manter a imagem normal
+    img.setAttribute("src", "./Assets/Avatar-blue.jpeg")
+    img.setAttribute("alt", "Logo da Sertenge Azul")
   }
 }
